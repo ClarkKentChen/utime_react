@@ -1,0 +1,35 @@
+// Flex
+    .df{
+        display: -webkit-box;       /* UC */
+        display: flex;
+        &.dn {display: none}
+    }
+
+    .ffc{
+        -webkit-box-orient: vertical;   /* UC */
+        flex-direction: column;
+    }
+    .fww{
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .flex{
+        -webkit-box-flex: 1;        /* UC */
+        flex: 1;
+    }
+
+    .flexi(@i: 1){
+        -webkit-box-flex: @i;       /* UC */
+        flex: @i;
+    }
+
+    .dfac{
+        -webkit-box-align: center;  /* UC */
+        align-items: center;
+    }
+
+    .dfjc {
+        -webkit-box-pack: center;   /* UC */
+        justify-content: center;
+    }

@@ -1,0 +1,51 @@
+.bg-ico(@i:transparent) {background: url("../img/icon.png?ver=@{version}") no-repeat (@i); background-size: 240px 60px}
+
+.icon(@w, @h, @x, @y) {width: @w; height: @h; .bg-ico; background-position: @x @y}
+
+// 雪碧图 一般导出3倍图
+.iDemo{
+    .icon(30px, 30px, 0, 0)
+}
+
+// 字体
+@font-face {
+	font-family: "icon";
+	src: url('../fonts/iconfont.eot');
+	src: url('../fonts/iconfont.eot#iefix') format('embedded-opentype'),
+	url('../fonts/iconfont.woff') format('woff'),
+	url('../fonts/iconfont.ttf') format('truetype'),
+	url('../fonts/iconfont.svg#icon') format('svg');
+}
+.icon{
+	font-family: "icon"!important;
+	font-style:normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}
+.iEdit{
+	.icon;
+}
+.iEdit:before { content: "\e603"}
+.iDown:before { content: "\e608"}
+.iNetwork:before { content: "\e60b"}
+.iPc:before { content: "\e606"}
+.iRefresh:before { content: "\e601"}
+.iKey:before { content: "\e602"}
+.iClock:before { content: "\e62c"}
+.iAdd:before { content: "\e612"}
+.iTime:before { content: "\e62f"}
+.iUpload:before { content: "\e605"}
+.iMind:before { content: "\e622"}
+.iMove:before { content: "\e620"}
+.iDownload:before { content: "\e623"}
+.iSearch:before { content: "\e609"}
+.iDrop:before { content: "\e607"}
+.iDelete:before { content: "\e600"}
+.iPreview:before { content: "\e62b"}
+.iAdd1:before { content: "\e62a"}
+.iVip:before { content: "\e629"}
+.iReduce:before { content: "\e627"}
+.iResource:before { content: "\e60c"}
+.iEducation:before { content: "\e60a"}
+.iPassword:before { content: "\e614"}
